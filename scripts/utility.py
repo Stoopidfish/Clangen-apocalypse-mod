@@ -1396,6 +1396,8 @@ def generate_sprite(cat, life_state=None, scars_hidden=False, acc_hidden=False, 
             new_sprite.blit(sprites.sprites['shaders' + cat_sprite], (0, 0), special_flags=pygame.BLEND_RGB_MULT)
             new_sprite.blit(sprites.sprites['lighting' + cat_sprite], (0, 0))
 
+        # draw mutations (Do this however you'd like)
+
         if not dead:
             new_sprite.blit(sprites.sprites['lines' + cat_sprite], (0, 0))
         elif cat.df:
