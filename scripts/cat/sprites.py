@@ -133,7 +133,7 @@ class Sprites():
             'mackerelcolours', 'classiccolours', 'sokokecolours', 'agouticolours', 'singlestripecolours', 
             'shadersnewwhite', 'lineartdead', 'tortiepatchesmasks', 
             'medcatherbs', 'lineartdf', 'lightingnew', 'fademask',
-            'fadestarclan', 'fadedarkforest'
+            'fadestarclan', 'fadedarkforest', 'mutations'
 
         ]:
             if 'lineart' in x and game.config['fun']['april_fools']:
@@ -148,6 +148,10 @@ class Sprites():
 
         self.make_group('lineartdead', (0, 0), 'lineartdead')
         self.make_group('lineartdf', (0, 0), 'lineartdf')
+        
+        #Mutations
+        for a, i in enumerate(['YELLOWMUSH', 'BLUEMUSH', 'BLACKMUSH', 'GREENMUSH', 'WINGS',]):
+            self.make_group('mutations', (a, 0), f'mutation{i}')
 
         # Fading Fog
         for i in range(0, 3):
