@@ -150,7 +150,7 @@ class Sprites():
         self.make_group('lineartdf', (0, 0), 'lineartdf')
 
         #Mutations
-        for a, i in enumerate(['YELLOWMUSH', 'BLUEMUSH', 'BLACKMUSH', 'GREENMUSH', 'WINGS',]):
+        for a, i in enumerate(['YELLOWMUSH', 'BLUEMUSH', 'BLACKMUSH', 'GREENMUSH', 'WINGS']):
             self.make_group('mutations', (a, 0), f'mutation{i}')
 
         # Fading Fog

@@ -1397,6 +1397,9 @@ def generate_sprite(cat, life_state=None, scars_hidden=False, acc_hidden=False, 
             new_sprite.blit(sprites.sprites['lighting' + cat_sprite], (0, 0))
 
         # draw mutations (Do this however you'd like)
+        '''if cat.mutation:
+            for mutation in cat.mutation:
+                new_sprite.blit(sprites.sprites['mutation' + mutation + cat_sprite], (0, 0))'''
 
         if not dead:
             new_sprite.blit(sprites.sprites['lines' + cat_sprite], (0, 0))
