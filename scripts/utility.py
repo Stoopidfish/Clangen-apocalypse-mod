@@ -1411,6 +1411,9 @@ def generate_sprite(cat, life_state=None, scars_hidden=False, acc_hidden=False, 
                 if scar in cat.pelt.scars2:
                     new_sprite.blit(sprites.sprites['scars' + scar + cat_sprite], (0, 0), special_flags=blendmode)
 
+        # draw mutation
+        new_sprite.blit(sprites.sprites['mutations' + cat_sprite, (0,0)])
+
         # draw accessories
         if not acc_hidden:        
             if cat.pelt.accessory in cat.pelt.plant_accessories:
